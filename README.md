@@ -74,3 +74,9 @@
 ## v1.3.1 擋板預設
 
 擋板預設厚度改為 0.5 mm，對應驗證下限同步調整為 0.5 mm。匯入既有設定時保留檔案中的明確厚度。測試檢查 0.5 mm 封底的實際厚度、STL 封閉性及 0.49 mm 拒絕；刻字保留材料的檢查維持獨立。
+
+## GitHub Pages 版（v1.3.4，由教具老師移植）
+
+- 原始碼來自 ChatGPT 版 v1.3.3（main 的第一個 commit 為原樣匯入）。
+- 為了放在 `https://fengphy73.github.io/wind-gear-studio/` 子網址，把 `index.html`、`src/app.jsx`、`src/worker.mjs` 裡從根目錄開始的檔案路徑改成相對路徑；齒輪幾何、預設值與介面都沒有改。
+- 建置公開網站：`npm ci && npm test && npm run build:pages`，輸出到 `docs/`，GitHub Pages 設定為 main 分支的 `/docs`。
